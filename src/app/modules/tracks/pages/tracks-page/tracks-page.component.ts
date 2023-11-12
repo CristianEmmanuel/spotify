@@ -1,11 +1,12 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
+import * as data from '../../../../data/tracks.json';
 
 @Component({
   selector: 'app-tracks-page',
   templateUrl: './tracks-page.component.html',
   styleUrls: ['./tracks-page.component.css']
 })
-export class TracksPageComponent implements OnInit, OnDestroy {
+export class TracksPageComponent implements OnInit {
 
   // tracksTrending: Array<TrackModel> = []
   // tracksRandom: Array<TrackModel> = []
@@ -30,8 +31,5 @@ export class TracksPageComponent implements OnInit, OnDestroy {
     //    })
   }
 
-  ngOnDestroy(): void {
-
-  }
-
+  
 }
