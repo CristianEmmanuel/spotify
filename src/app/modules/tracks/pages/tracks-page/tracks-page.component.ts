@@ -1,5 +1,6 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import * as data from '../../../../data/tracks.json';
+import { TrackModel } from '@core/models/tracks.model';
 
 @Component({
   selector: 'app-tracks-page',
@@ -8,8 +9,8 @@ import * as data from '../../../../data/tracks.json';
 })
 export class TracksPageComponent implements OnInit {
 
-  // tracksTrending: Array<TrackModel> = []
-  // tracksRandom: Array<TrackModel> = []
+   tracksTrending: Array<TrackModel> = []
+   tracksRandom: Array<TrackModel> = []
   // listObservers$: Array<Subscription> = []
 
    constructor() { }
@@ -26,9 +27,9 @@ export class TracksPageComponent implements OnInit {
 
   loadDataRandom(): void {
     //  this.trackService.getAllRandom$()
-    //    .subscribe((response: TrackModel[]) => {
-    //      this.tracksRandom = response
-    //    })
+    //     .subscribe((response: TrackModel[]) => {
+    //       this.tracksRandom = response
+    //     })
   }
 
   
