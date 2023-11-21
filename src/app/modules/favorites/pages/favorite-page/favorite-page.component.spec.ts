@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CardPlayerComponent } from './card-player.component';
+import { FavoritePageComponent } from './favorite-page.component';
 
-describe('CardPlayerComponent', () => {
-  let component: CardPlayerComponent;
-  let fixture: ComponentFixture<CardPlayerComponent>;
+describe('FavoritePageComponent', () => {
+  let component: FavoritePageComponent;
+  let fixture: ComponentFixture<FavoritePageComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ CardPlayerComponent ]
+      declarations: [ FavoritePageComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(CardPlayerComponent);
+    fixture = TestBed.createComponent(FavoritePageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
