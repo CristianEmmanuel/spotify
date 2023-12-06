@@ -16,8 +16,8 @@ export class TracksPageComponent implements OnInit {
    constructor() { }
 
   ngOnInit(): void {
-    this.loadDataAll() //TODO 📌📌
-    this.loadDataRandom() //TODO 📌📌
+    this.loadDataAll()
+    this.loadDataRandom()
   }
 
   async loadDataAll(): Promise<any> {

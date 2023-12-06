@@ -23,7 +23,6 @@ export class MediaPlayerComponent implements OnInit, OnDestroy {
 
   ngOnDestroy(): void {
     this.listObservers$.forEach(u => u.unsubscribe())
-    console.log('🔴🔴🔴🔴🔴🔴🔴 BOOM!');
   }
 
 
@@ -34,6 +33,7 @@ export class MediaPlayerComponent implements OnInit, OnDestroy {
     const clickX = clientX - x //TODO: 1050 - x
     const percentageFromX = (clickX * 100) / width
     console.log(`Click(x): ${percentageFromX}`);
+   // this.multimediaService.seekAudio(percentageFromX)
    // this.multimediaService.seekAudio(percentageFromX)
 
   }
