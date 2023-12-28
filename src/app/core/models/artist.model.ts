@@ -1,5 +1,5 @@
 export interface ArtistModel{
-    naem: string;
+    name: string;
     nickname: string;
     nationality: string;
 }
