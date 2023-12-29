@@ -1,22 +1,21 @@
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TracksPageComponent } from './tracks-page.component';
+import { SearchComponent } from './search.component';
 
-describe('TracksPageComponent', () => {
-  let component: TracksPageComponent;
-  let fixture: ComponentFixture<TracksPageComponent>;
+describe('SearchComponent', () => {
+  let component: SearchComponent;
+  let fixture: ComponentFixture<SearchComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [HttpClientTestingModule],
-      declarations: [TracksPageComponent]
+      declarations: [SearchComponent]
     })
       .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(TracksPageComponent);
+    fixture = TestBed.createComponent(SearchComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
@@ -25,4 +24,3 @@ describe('TracksPageComponent', () => {
     expect(component).toBeTruthy();
   });
 });
-
